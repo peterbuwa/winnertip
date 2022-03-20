@@ -1,0 +1,143 @@
+*{border:none; list-style-type: none; text-decoration: none; box-sizing: border-box; padding:0; margin:0; font-family: cursive;}
+.donut-containers-wrapper, .donut-wrapper-container2 {display:flex; justify-content: center;}
+.donut-container, .donut-container2 {width:90%;}
+.headed-wrapper {display: flex; justify-content: flex-start; padding: 10px;}
+.header-content, .telephone {width:50%;} 
+.header-content {display: flex; justify-content: center;}
+.header-content a {padding:5px; text-decoration: none; color:brown; font-size:20px; text-transform: capitalize;}
+.telephone {display:flex; justify-content: space-around;}
+.header-content a:hover {text-decoration:underline; font-style: italic; font-weight: bold;}
+.items-bill {border:2px solid black; border-radius: 5px; padding: 5px;}
+.phone {padding:5px; font-weight: bold;}
+.phone-icon {display:flex; align-items: center;}
+.container2-wrapper {min-height:500px; background-color: blue; display: flex; justify-content: center; padding:100px 0 0 0}
+.container2-content {width:450px; height:100px;}
+.button, .con2{display:flex; justify-content: center;}
+.con2 p {font-size: 35px;text-transform: capitalize;}
+span {font-size:40px; color: brown;}
+.button {padding:10px; }
+button {font-size: 20px; padding: 5px; border:2px solid black; text-transform: capitalize;}
+.container3-content1, .container3-content2 {width:40%;}
+.container2-wrapper {background-image: url(image/headerBcg.jpeg); background-size: cover; background-repeat: no-repeat; background-position: 100% 100%;}
+.container3-content, .container3-image  {height:400px; width:100%;}
+.container3-image img {width:100%; height:100%; margin:20px 0 0 20px;}
+.container3-image  {border: 3px solid gold;}
+.container3 {display:flex; justify-content: space-around;}
+.container3 {padding:30px;}
+.container3-content1 {padding:70px 0 0 0;}
+.container4-content2 {display: flex; justify-content: center;  padding:20px 0;}
+.container4-content1 {text-align: center;}
+.same{margin:0 10px; font-size: 14px; padding:0 10px;}
+.donut-wrapper-container2 {background-color: gray;}
+.amount {float:right; font-size:16px;}
+.container4-content3-content {width:30%; margin:10px 0;  }
+.container4-content3-content img {width:100%; scale: 1;transition: 1s; cursor: pointer;}
+.scale-container {overflow: hidden;}
+.container4-content3-content img:hover {scale: 1.1;}
+.container4-content3 {display: flex; flex-wrap: wrap; justify-content: space-around;}
+.items-price {background-color: white; padding:10px;}
+.search-con i{background-color: wheat; padding:0 5px;}
+.search-con {display: flex; justify-content: center;}
+#search {width:250px; padding:0 10px; height:30px;}
+.search-con i {display: flex; align-items: center;}
+.about {font-size: 60px; color:brown;}
+.modal-content {height:350px; width:60%;  }
+.modal-container {width: 60%; height: 60%;  background-color: white; position:absolute; z-index: 10; display: flex; justify-content: center;}
+.fa-times {z-index: 20; cursor:pointer;font-size: 20px; color:red; position:absolute ; right:10px;}
+.modal { display: flex;justify-content:center; display: none; align-items: center; width: 100%; height: 100%; position: fixed; z-index: 1; }
+.modal-content-image {width: 90%; height: 100%; }
+.err {text-align:center; font-size: 30px;}
+
+
+
+
+@media screen and (min-width:400px) {
+    .headed-wrapper{display: flex;justify-content: space-between;}
+    .header-content, .phone-icon{display: none;}
+    .fa-bars {font-size: 30px; text-align: right; cursor: pointer;}
+    .fa-times{font-size: 40px; padding: 0 20px 0 0; cursor: pointer;}
+    .hamburger {width:10%;display: flex; justify-content: flex-end; align-items: center;}
+    .telephone {width:60%; display: flex;justify-content: center;}
+    .items-bill {width:100%;}
+    .phone {text-align: center;}
+    .container2-wrapper { background-image: url(image/headerBcg.jpeg); background-size: cover; background-repeat: no-repeat; background-position: 50%;min-height: 300px;}
+    .con2 p { font-size: 25px;}
+      .container2-wrapper {padding: 70px 0 0 0;}
+     .container3 {display: block; }
+      .container3-content1, .container3-content2 {width: 100%;}
+      .container3-content1 {padding: 0;}
+      .container3-content{height:300px;}
+      .container3-image { height: 250px;width: 100%;}
+      .container4-content3 {display: flex;}
+      .container4-content3-content { width: 70%; margin: 10px 0; }
+      .same {margin: 0 5px;}
+      .modal-container { width: 90%;}
+      .modal-content { width: 90%;}
+      .modal-content-image {width: 85%; }
+      .closem {right: 0; font-size: 25px; padding: 0 5px 0 0;}
+      .container3-content2 {padding: 20px 0;}
+      .nav a {display: block; text-transform: capitalize; padding:10px; }
+      .nav a:hover {background-color: #fff; text-transform: uppercase;}
+      .nav-wrapper {background-color: rgb(200, 200, 200); overflow: hidden;height:0;}
+      .number {text-align: center; padding:10px}
+      
+}
+
+@media screen and (min-width:520px) {
+    .closem {right: 0; font-size: 30px; padding: 0 5px 0 0;}
+}
+
+@media screen and (min-width:720px) {
+.hamburger{display: none;}
+    *{border:none; list-style-type: none; text-decoration: none; box-sizing: border-box; padding:0; margin:0; font-family: cursive;}
+.donut-containers-wrapper, .donut-wrapper-container2 {display:flex; justify-content: center;}
+.donut-container, .donut-container2 {width:90%;}
+.headed-wrapper {display: flex; justify-content: flex-start; padding: 10px;}
+/* .header-content, .telephone {width:50%;}  */
+.header-content {display: flex; justify-content: center; align-items: center; width:45%}
+.telephone{width:45%;}
+.header-content a {padding:5px; text-decoration: none; color:brown; font-size:20px; text-transform: capitalize;}
+.telephone {display:flex; justify-content: space-around;}
+.header-content a:hover {text-decoration:underline; font-style: italic; font-weight: bold;}
+.items-bill {border:2px solid black; border-radius: 5px; padding: 5px;}
+.phone {padding:5px; font-weight: bold;}
+.phone-icon {display:flex; align-items: center;}
+.container2-wrapper { background-image: url(image/headerBcg.jpeg); background-size: cover; background-repeat: no-repeat; background-position: 50% 100%;min-height: 500px; padding: 100px 0 0 0;}
+.logo {width:10%;}
+.container2-content {width:450px; height:100px;}
+.button, .con2{display:flex; justify-content: center;}
+.con2 p {font-size: 30px;text-transform: capitalize;}
+span {font-size:50px; color: brown;}
+.button {padding:10px; }
+button {font-size: 20px; padding: 5px; border:2px solid black; text-transform: capitalize;}
+.container3-content1, .container3-content2 {width:40%;}
+
+.container3-content, .container3-image  {height:400px; width:100%;}
+.container3-image img {width:100%; height:100%; margin:20px 0 0 20px;}
+.container3-image  {border: 3px solid gold;}
+.container3 {display:flex; justify-content: space-around;}
+.container3 {padding:30px;}
+.container3-content1 {padding:70px 0 0 0;}
+.container4-content2 {display: flex; justify-content: center;  padding:20px 0;}
+.container4-content1 {text-align: center;}
+.same{margin:0 10px; font-size: 14px; padding:0 10px;}
+.donut-wrapper-container2 {background-color: gray;}
+.amount {float:right; font-size:16px;}
+.container4-content3-content {width:30%; margin:10px 0;  }
+.container4-content3-content img {width:100%; scale: 1;transition: 1s; cursor: pointer;}
+.scale-container {overflow: hidden;}
+.container4-content3-content img:hover {scale: 1.1;}
+.container4-content3 {display: flex; flex-wrap: wrap; justify-content: space-around;}
+.items-price {background-color: white; padding:10px;}
+.search-con i{background-color: wheat; padding:0 5px;}
+.search-con {display: flex; justify-content: center;}
+#search {width:250px; padding:0 10px; height:30px;}
+.search-con i {display: flex; align-items: center;}
+.about {font-size: 60px; color:brown;}
+.modal-content {height:350px; width:60%;  }
+.modal-container {width: 60%; height: 60%;  background-color: white; position:absolute; z-index: 10; display: flex; justify-content: center;}
+.fa-times {z-index: 20; cursor:pointer;font-size: 20px; color:red; position:absolute ; right:10px;}
+.modal { display: flex;justify-content:center; display: none; align-items: center; width: 100%; height: 100%; position: fixed; z-index: 1; }
+.modal-content-image {width: 90%; height: 100%; }
+.err {text-align:center; font-size: 30px;}
+}
