@@ -14,7 +14,7 @@
 .container2-content {width:450px; height:100px;}
 .button, .con2{display:flex; justify-content: center;}
 .con2 p {font-size: 35px;text-transform: capitalize;}
-span {font-size:40px; color: brown;}
+span {font-size:27px; color: brown;}
 .button {padding:10px; }
 button {font-size: 20px; padding: 5px; border:2px solid black; text-transform: capitalize;}
 .container3-content1, .container3-content2 {width:40%;}
@@ -23,9 +23,10 @@ button {font-size: 20px; padding: 5px; border:2px solid black; text-transform: c
 .container3-image img {width:100%; height:100%; margin:20px 0 0 20px;}
 .container3-image  {border: 3px solid gold;}
 .container3 {display:flex; justify-content: space-around;}
-.container3 {padding:30px;}
+/* .container3 {padding:30px;} */
 .container3-content1 {padding:70px 0 0 0;}
-.container4-content2 {display: flex; justify-content: center;  padding:20px 0;}
+.container3-content p {text-align: justify;}
+.container4-content2 {padding: 20px 0;display: flex;flex-wrap: wrap;justify-content: center;align-items: center;}
 .container4-content1 {text-align: center;}
 .same{margin:0 10px; font-size: 14px; padding:0 10px;}
 .donut-wrapper-container2 {background-color: gray;}
@@ -36,6 +37,7 @@ button {font-size: 20px; padding: 5px; border:2px solid black; text-transform: c
 .container4-content3-content img:hover {scale: 1.1;}
 .container4-content3 {display: flex; flex-wrap: wrap; justify-content: space-around;}
 .items-price {background-color: white; padding:10px;}
+.btn{margin:5px;}
 .search-con i{background-color: wheat; padding:0 5px;}
 .search-con {display: flex; justify-content: center;}
 #search {width:250px; padding:0 10px; height:30px;}
@@ -51,7 +53,77 @@ button {font-size: 20px; padding: 5px; border:2px solid black; text-transform: c
 
 
 
-@media screen and (min-width:400px) {
+
+
+
+/* 
+@media screen and (max-width:320px) {
+    .headed-wrapper{display: flex;justify-content: center}
+    .header-content, .phone-icon{display: none;}
+    .fa-bars {font-size: 30px; text-align: right; cursor: pointer;}
+    .fa-times{font-size: 40px; padding: 0 20px 0 0; cursor: pointer;}
+    .hamburger {width:10%;display: flex; justify-content: flex-end; align-items: center;}
+    .telephone {width:60%; display: none;}
+    .items-bill {width:100%;}
+    .phone {text-align: center;}
+    .container2-wrapper { background-image: url(image/headerBcg.jpeg); background-size: cover; background-repeat: no-repeat; background-position: 50%;min-height: 300px;}
+    .con2 p { font-size: 25px;}
+      .container2-wrapper {padding: 70px 0 0 0;}
+     .container3 {display: block; }
+      .container3-content1, .container3-content2 {width: 100%;}
+      .container3-content1 {padding: 0;}
+      .container3-content{height:300px;}
+      .container3-image { height: 250px;width: 100%;}
+      .container4-content3 {display: flex;}
+      .container4-content3-content { width: 70%; margin: 10px 0; }
+      .same {margin: 0 5px;}
+      .modal-container { width: 90%;}
+      .modal-content { width: 90%;}
+      .modal-content-image {width: 85%; }
+      .closem {right: 0; font-size: 25px; padding: 0 5px 0 0;}
+      .container3-content2 {padding: 20px 0;}
+      .nav a {display: block; text-transform: capitalize; padding:10px; }
+      .nav a:hover {background-color: #fff; text-transform: uppercase;}
+      .nav-wrapper {background-color: rgb(200, 200, 200); overflow: hidden;height:0;}
+      .number {text-align: center; padding:10px}
+      
+} */
+
+
+
+@media screen and (min-width:320px) {
+    .headed-wrapper{display: flex;justify-content: space-between;}
+    .header-content, .phone-icon{display: none;}
+    .fa-bars {font-size: 30px; text-align: right; cursor: pointer;}
+    .fa-times{font-size: 40px; padding: 0 20px 0 0; cursor: pointer;}
+    .hamburger {width:10%;display: flex; justify-content: flex-end; align-items: center;}
+    .telephone {width:60%; display: flex;justify-content: center;}
+    .items-bill {width:100%; display: flex; justify-content: center; align-items: center;}
+    .phone {text-align: center; padding:0;}
+    .container2-wrapper { background-image: url(image/headerBcg.jpeg); background-size: cover; background-repeat: no-repeat; background-position: 50%;min-height: 300px;}
+    .con2 p { font-size: 20px;}
+      .container2-wrapper {padding: 70px 0 0 0;}
+     .container3 {display: block; padding: 20px 10px;}
+      .container3-content1, .container3-content2 {width: 100%;}
+      .container3-content1 {padding: 30px 0;}
+      .container3-content{height:300px;}
+      .container3-image { height: 200px;width: 90%; }
+      .container4-content3 {display: flex;}
+      .container4-content3-content { width: 70%; margin: 10px 0; }
+      .same {margin: 0 5px;}
+      .modal-container { width: 90%;}
+      .modal-content { width: 90%;}
+      .modal-content-image {width: 85%; }
+      .closem {right: 0; font-size: 25px; padding: 0 5px 0 0;}
+      .container3-content2 {padding: 20px 0;}
+      .nav a {display: block; text-transform: capitalize; padding:10px; }
+      .nav a:hover {background-color: #fff; text-transform: uppercase;}
+      .nav-wrapper {background-color: rgb(200, 200, 200); overflow: hidden;height:0; transition:.5s;}
+      .number {text-align: center; padding:10px}
+      
+}
+
+@media screen and (min-width:420px) {
     .headed-wrapper{display: flex;justify-content: space-between;}
     .header-content, .phone-icon{display: none;}
     .fa-bars {font-size: 30px; text-align: right; cursor: pointer;}
@@ -78,7 +150,7 @@ button {font-size: 20px; padding: 5px; border:2px solid black; text-transform: c
       .container3-content2 {padding: 20px 0;}
       .nav a {display: block; text-transform: capitalize; padding:10px; }
       .nav a:hover {background-color: #fff; text-transform: uppercase;}
-      .nav-wrapper {background-color: rgb(200, 200, 200); overflow: hidden;height:0;}
+      .nav-wrapper {background-color: rgb(200, 200, 200); overflow: hidden;height:0; transition:.5s;}
       .number {text-align: center; padding:10px}
       
 }
@@ -93,7 +165,7 @@ button {font-size: 20px; padding: 5px; border:2px solid black; text-transform: c
 .donut-containers-wrapper, .donut-wrapper-container2 {display:flex; justify-content: center;}
 .donut-container, .donut-container2 {width:90%;}
 .headed-wrapper {display: flex; justify-content: flex-start; padding: 10px;}
-/* .header-content, .telephone {width:50%;}  */
+.header-content, .telephone {width:50%;} 
 .header-content {display: flex; justify-content: center; align-items: center; width:45%}
 .telephone{width:45%;}
 .header-content a {padding:5px; text-decoration: none; color:brown; font-size:20px; text-transform: capitalize;}
